@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+div {
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-flow: row wrap;
+    width: 70rem;
+    height: 70rem;
+    position: relative;
+    border-style: solid;
+}
+
+.grid-size {
+    margin-bottom: 0.5rem;
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+}
+
+.controls-inner {
+    text-align: center;
+}
+
+.reset {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+
+.box {
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+}
+
+.box.active {
+    background-color: blue;
+}
